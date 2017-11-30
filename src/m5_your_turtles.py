@@ -33,6 +33,16 @@ import rosegraphics as rg
 
 window = rg.TurtleWindow()
 
+turtle_power = rg.SimpleTurtle('turtle')
+turtle_power.pen = rg.Pen('cornsilk', 15)
+turtle_power.speed = 100
+
+size = 200
+
+for k in range(8):
+    turtle_power.draw_square(size)
+    turtle_power.right(45)
+
 turtle_soup = rg.SimpleTurtle('turtle')
 turtle_soup.pen = rg.Pen('coral', 5)
 turtle_soup.speed = 40
@@ -42,15 +52,5 @@ sides = 3
 for k in range(8):
     turtle_soup.draw_regular_polygon(sides, 100)
     turtle_soup.right(45)
-
-turtle_power = rg.SimpleTurtle('')
-turtle_power.pen = rg.Pen('cornsilk, 15')
-turtle_power.speed = 100
-
-size = 200
-
-for k in range(4):
-    turtle_power.draw_square(size)
-    turtle_power.right(45)
 
 window.close_on_mouse_click()
