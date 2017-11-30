@@ -44,7 +44,7 @@ for k in range(8):
     turtle_power.right(45)
 
 turtle_soup = rg.SimpleTurtle('turtle')
-turtle_soup.pen = rg.Pen('coral', 5)
+turtle_soup.pen = rg.Pen('coral', 6)
 turtle_soup.speed = 40
 
 sides = 3
